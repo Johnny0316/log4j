@@ -51,13 +51,12 @@ public class App {
 			logger.debug("main(String[]) - start");
 		}
 		FutureTask<Integer> ft = new FutureTask<Integer>(new Callable<Integer>() {
-
 			@Override
 			public Integer call() throws Exception {
 				if (logger.isDebugEnabled()) {
 					logger.debug("call() - start");
 				}
-				
+				System.out.println("hello");
 				System.out.println(Thread.currentThread().getName());
 
 				if (logger.isDebugEnabled()) {
